@@ -19,12 +19,12 @@ btnMore.addEventListener('click', function () {
     if (logos.classList.contains("visible")) {
         btnMore.textContent = 'Скрыть';
         btnMore.classList.add("button-open")
-        logos.style.height = "auto";
+        logos.classList.add("logos_height")
 }
     if (!logos.classList.contains("visible")) {
         btnMore.textContent = 'Показать все';
         btnMore.classList.remove("button-open")
-        logos.style.height = "176px";
+        logos.classList.remove("logos_height")
 }
 });
 
